@@ -65,10 +65,10 @@ def main():
 
 #cv2.imshow("Image4",resized_img)
     cv2.imshow("Image3",image_grayscale_blurred)
+    cv2.imsave("test_pred.jpg")
 
     if cv2.waitKey(25) & 0xFF == ord('q'):
             cv2.destroyAllWindows()
-            break
 
 
 if __name__ == '__main__':
